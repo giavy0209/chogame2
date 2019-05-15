@@ -299,7 +299,6 @@ nav{
     position: relative;
     cursor: pointer;
         .hm-conntainer-fluid{
-        // background-color: #0e0e0d;
         background-image: linear-gradient(to top, #000, #292929);
         .container{
             .menu{
@@ -843,7 +842,7 @@ footer{
             font-size: 24px;
             border-top: 4px solid #c0c0c2;
             margin-top: 90px;
-            span{
+            a{
                 font-weight: 900;
                 padding: 20px 0;
             }

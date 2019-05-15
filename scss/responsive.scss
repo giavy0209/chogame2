@@ -155,7 +155,12 @@
     }
     .wrapper-products{
         overflow: scroll;
-        .list-product{
+        .list-product{  
+            &.hm-column-4 .item{
+                &:not(:nth-child(-n + 3)){
+                    margin-top: 0;
+                }
+            }
             display: flex;
             width: fit-content;
             overflow-x:scroll;

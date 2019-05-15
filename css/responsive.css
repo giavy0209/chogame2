@@ -104,6 +104,8 @@
       display: flex;
       width: fit-content;
       overflow-x: scroll; }
+      .wrapper-products .list-product.hm-column-4 .item:not(:nth-child(-n + 3)) {
+        margin-top: 0; }
       .wrapper-products .list-product .item {
         width: 300px; }
 

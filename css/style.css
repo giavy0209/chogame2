@@ -682,7 +682,7 @@ footer .hm-container-fluid {
     font-size: 24px;
     border-top: 4px solid #c0c0c2;
     margin-top: 90px; }
-    footer .hm-container-fluid .last-footer span {
+    footer .hm-container-fluid .last-footer a {
       font-weight: 900;
       padding: 20px 0; }
 
