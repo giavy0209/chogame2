@@ -296,7 +296,9 @@ header{
 /* ==================nav=================== */
 nav{
     z-index: 999;
-    .hm-conntainer-fluid{
+    position: relative;
+    cursor: pointer;
+        .hm-conntainer-fluid{
         // background-color: #0e0e0d;
         background-image: linear-gradient(to top, #000, #292929);
         .container{

@@ -1,0 +1,247 @@
+@media only screen and (max-width:1190px){
+    .hm-push-1{
+        margin: 0;
+    }
+    footer .hm-col-4{
+        width: 41.6666%;
+    }
+}
+@media only screen and (max-width:950px){
+    header{
+        .hm-container-fluid{
+            .container{
+                .top-header{
+                    .hm-push-3{
+                        margin: 0;
+                    }
+                    .hm-col-4{
+                        width: 41.6666%;
+                    }
+                    .hm-col-2{
+                        width: 33.33333%;;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        .hm-row{
+            text-align: center;
+            .hm-col-5{
+                width: 70%;
+            }
+            .hm-col-2{
+                width: 30%;
+                .contact{
+                    ul{
+                        li{
+                            float: none !important ;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+            .hm-col-4{
+                width: 70%;
+                .widgets{
+                    float: none !important;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:800px){
+    .hm-column-4 .item{
+        width: 33.333%;
+        &:not(:nth-child(-n + 3)){
+            margin-top: 30px;
+        }
+    }
+    .wrapper-content{
+        #sidebar{
+            display: none;
+        }
+        .hm-col-9{
+            width: 100%;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+    }
+    .news-vid .video::before{
+        font-size: 12px;
+        padding: 2px 0;
+    }
+    .news-img .post-block-news::after{
+        font-size: 10px;
+        padding: 2px 0;
+    }
+}
+@media only screen and (max-width: 600px){
+    header{
+        .hm-container-fluid{
+            .container{
+                .top-header{
+                    .hm-push-3{
+                        margin: 0;
+                        width: 100%;
+                        .logo{
+                            margin: 0 auto;
+                        }
+                    }
+                    .hm-col-4{
+                        width: 100%;
+                        padding-left: 0 !important;
+                        padding-right: 0 !important;
+                    }
+                    .hm-col-2{
+                        width: 100%;
+                        padding-left: 0 !important;
+                        padding-right: 0 !important;
+                        text-align: center;
+                        .contact{
+                            float: none !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    nav{
+        height: 50px;
+        cursor: pointer;
+            &::before{
+                content:"";
+                width: 15px;
+                height: 2px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(50%, -50%);
+                box-shadow: 0 5px 0 #fff;
+                background-color: #fff;
+                
+            }
+            &.active .menu{
+                opacity: 1 !important;
+                pointer-events: all !important;
+            }
+        .hm-conntainer-fluid{
+            .container{
+                .menu{
+                    opacity: 0;
+                    pointer-events: none;
+                    position: absolute;
+                    top: 100%;
+                    z-index: 9999;
+                    width: 100%;
+                    text-align: center;
+                    background-image: linear-gradient(to top, #000, #292929);
+                    transition: all .3s ease;
+                    left: 0;
+                    li{
+                        display: block;
+                        a{
+                            padding: 10px 0;
+                        }
+                        ul{
+                            display: none;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    .wrapper-products{
+        overflow: scroll;
+        .list-product{
+            display: flex;
+            width: fit-content;
+            overflow-x:scroll;
+            .item{
+                width: 300px;
+            }
+        }
+    }
+    footer{
+        .hm-row{
+            text-align: center;
+            .hm-col-5{
+                width: 100%;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+            .hm-col-2{
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                width: 100%;
+                .contact{
+                    ul{
+                        li{
+                            float: none !important ;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+            .hm-col-4{
+                width: 100%;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                .widgets{
+                    float: none !important;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 600px){
+    .wrapper-news-2{
+        height: 1000px;
+        overflow: scroll;
+        .post-block {
+            > *{
+                width: 100% !important;
+            }
+            .content{
+                margin-top: 10px;
+            }
+        }
+    }
+    .news-vid .video .thumb::before{
+        width: 80px ;
+        height: 80px    ;
+    }
+}
+@media only screen and (max-width: 400px){
+    footer{
+        .hm-row{
+            text-align: center;
+            .hm-col-5{
+                width: 100%
+            }
+            .hm-col-2{
+                width: 100%;
+                .contact{
+                    ul{
+                        li{
+                            float: none !important ;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+            .hm-col-4{
+                width: 100%;
+                .widgets{
+                    float: none !important;
+                    display: block;
+                    margin: 0 !important;
+                }
+            }
+        }
+    }
+
+}

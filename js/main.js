@@ -13,6 +13,16 @@ function pauseVid(){
     // thumb.style.opacity = "1";
     thumb.style.pointerEvents = "all";
 }
+
+function showMenu(){
+    attMenu = document.getElementById('menu').hasAttribute('class');
+
+    if(attMenu == false ){
+        menu.setAttribute('class', 'active');
+    }else{
+        menu.removeAttribute('class', 'active')
+    }
+}
 //set height
     // debugger;
     var getHeight = getHeight.offsetHeight + 'px';
