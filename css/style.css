@@ -285,7 +285,8 @@ nav {
           bottom: 0;
           background-image: linear-gradient(to top, #3a3b3b, #151414);
           opacity: 0;
-          transition: all .3s ease; }
+          transition: all .3s ease;
+          pointer-events: none; }
         nav .hm-conntainer-fluid .container .menu > li:hover::before {
           opacity: .8; }
         nav .hm-conntainer-fluid .container .menu > li:hover > ul {
@@ -313,10 +314,6 @@ nav {
               font-size: 20px; }
 
 /* ==================slide=================== */
-.wrapper-brand-news {
-  background-color: #000;
-  margin-top: 50px; }
-
 .carousel-indicators {
   margin-bottom: 20px; }
   .carousel-indicators li {
@@ -464,6 +461,11 @@ aside .widgets .list-brand .brand {
   margin-top: 40px; }
 
 /* =================== wrapper news 2======================= */
+.wrapper-brand-news {
+  background-color: #000;
+  margin-top: 50px;
+  padding: 20px 0; }
+
 .wrapper-news-2 .news-2 .wrapper-title {
   font-size: 18px;
   font-style: italic;
@@ -534,8 +536,7 @@ aside .widgets .list-brand .brand {
     margin-top: 25px; }
     .wrapper-products .list-product .product {
       position: relative; }
-      .wrapper-products .list-product .product::before {
-        content: "DEFIANCE 2050";
+      .wrapper-products .list-product .product h3 {
         font-weight: 900;
         font-size: 15px;
         color: #fff;
@@ -548,10 +549,34 @@ aside .widgets .list-brand .brand {
         right: 0;
         z-index: 1;
         pointer-events: none;
-        transition: all .3s ease; }
-      .wrapper-products .list-product .product::after {
+        transition: all .3s ease;
+        margin: 0;
+        z-index: 2; }
+      .wrapper-products .list-product .product .des {
         position: absolute;
-        content: "Mua ngay";
+        top: 100%;
+        bottom: 0%;
+        left: 0;
+        right: 0;
+        padding: 5px;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        pointer-events: none;
+        transition: all .3s ease;
+        z-index: 2; }
+      .wrapper-products .list-product .product::before {
+        content: " ";
+        background-color: rgba(0, 0, 0, 0.8);
+        position: absolute;
+        top: 100%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transition: all .3s ease;
+        z-index: 1; }
+      .wrapper-products .list-product .product .buy {
+        position: absolute;
         padding: 8px 20px;
         right: -10px;
         bottom: 35px;
@@ -559,15 +584,39 @@ aside .widgets .list-brand .brand {
         z-index: 2;
         text-align: center;
         transition: all .5s ease;
+        color: #fff;
+        font-style: italic;
         pointer-events: none; }
-      .wrapper-products .list-product .product:hover::before {
+      .wrapper-products .list-product .product:hover h3 {
         bottom: 100%;
         transform: translate(0, 100%);
         font-size: 20px; }
-      .wrapper-products .list-product .product:hover::after {
+      .wrapper-products .list-product .product:hover .des {
+        top: 0%;
+        margin: 20% 5px 20% 5px;
+        overflow-y: scroll;
+        pointer-events: all; }
+        .wrapper-products .list-product .product:hover .des::-webkit-scrollbar {
+          width: 4px;
+          pointer-events: all; }
+        .wrapper-products .list-product .product:hover .des::-webkit-scrollbar-thumb {
+          background: transparent;
+          border-radius: 10px;
+          width: 2px; }
+        .wrapper-products .list-product .product:hover .des:hover::-webkit-scrollbar-thumb {
+          background-color: #1f1f1f;
+          transition: all .3s ease;
+          opacity: 1; }
+      .wrapper-products .list-product .product:hover::before {
+        top: 0; }
+      .wrapper-products .list-product .product:hover .buy {
         left: 0;
         right: 0;
-        font-size: 20px; }
+        font-size: 20px;
+        bottom: 0;
+        pointer-events: auto; }
+        .wrapper-products .list-product .product:hover .buy:hover {
+          font-size: 26px; }
     .wrapper-products .list-product .rating {
       padding: 5px 0; }
       .wrapper-products .list-product .rating .star {
@@ -578,9 +627,9 @@ aside .widgets .list-brand .brand {
         height: 30px; }
         .wrapper-products .list-product .rating .star.active {
           background-image: url("../images/star.png"); }
-    .wrapper-products .list-product .price {
-      cursor: pointer;
+    .wrapper-products .list-product .price a {
       font-size: 15px;
+      color: #fff;
       font-weight: 900; }
 
 /* =================== footer======================= */
