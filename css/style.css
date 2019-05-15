@@ -224,7 +224,13 @@ header .logo {
 header .contact {
   float: right; }
   header .contact a {
-    padding: 25px 10px; }
+    margin-right: 20px;
+    padding: 20px 0; }
+    header .contact a:last-child {
+      margin-right: 0; }
+    header .contact a img {
+      width: 25px;
+      height: 25px; }
 header .search-header {
   padding: 25px 0; }
   header .search-header input {
@@ -269,16 +275,25 @@ nav {
           color: #fff;
           font-weight: 900;
           padding: 35px 25px;
-          font-size: 20px;
+          font-size: 20px; }
+        nav .hm-conntainer-fluid .container .menu > li::before {
+          content: " ";
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          background-image: linear-gradient(to top, #3a3b3b, #151414);
+          opacity: 0;
           transition: all .3s ease; }
-        nav .hm-conntainer-fluid .container .menu > li:hover {
-          background-image: linear-gradient(to top, #3a3b3b, #151414); }
-          nav .hm-conntainer-fluid .container .menu > li:hover > ul {
-            opacity: 1;
-            top: 100%;
-            pointer-events: all; }
-            nav .hm-conntainer-fluid .container .menu > li:hover > ul li a:hover {
-              color: #234fdf; }
+        nav .hm-conntainer-fluid .container .menu > li:hover::before {
+          opacity: .8; }
+        nav .hm-conntainer-fluid .container .menu > li:hover > ul {
+          opacity: 1;
+          top: 100%;
+          pointer-events: all; }
+          nav .hm-conntainer-fluid .container .menu > li:hover > ul li a:hover {
+            color: #234fdf; }
         nav .hm-conntainer-fluid .container .menu > li ul {
           position: absolute;
           z-index: 9999;
@@ -302,15 +317,17 @@ nav {
   background-color: #000;
   margin-top: 50px; }
 
-.carousel-indicators li {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0);
-  border: 1px solid rgba(255, 255, 255, 0.5); }
-.carousel-indicators .active {
-  background-color: white;
-  border: 1px solid white; }
+.carousel-indicators {
+  margin-bottom: 20px; }
+  .carousel-indicators li {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid rgba(255, 255, 255, 0.5); }
+  .carousel-indicators .active {
+    background-color: white;
+    border: 1px solid white; }
 
 .carousel-caption {
   bottom: 40%;
