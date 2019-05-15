@@ -305,6 +305,7 @@ nav{
                     }
                     &:hover{
                         background-image: linear-gradient(to top, #3a3b3b, #151414);
+                        transition: all .3s ease;
                         >ul{
                             opacity: 1;
                             top: 100%;
