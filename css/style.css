@@ -476,44 +476,44 @@ aside .widgets .list-brand .brand {
   width: fit-content;
   padding: 10px 0;
   font-weight: 700; }
-.wrapper-news-2 .news-2 .post-block {
+.wrapper-news-2 .news-2 .list-post-block {
   font-size: 0;
   margin-top: 25px; }
-  .wrapper-news-2 .news-2 .post-block * {
+  .wrapper-news-2 .news-2 .list-post-block * {
     vertical-align: top; }
-  .wrapper-news-2 .news-2 .post-block .news-2-img {
+  .wrapper-news-2 .news-2 .list-post-block .news-2-img {
     width: 33.333%;
     display: inline-block;
     padding-right: 15px; }
-  .wrapper-news-2 .news-2 .post-block .content {
+  .wrapper-news-2 .news-2 .list-post-block .content {
     width: 66.6666%;
     display: inline-block;
     padding-left: 15px; }
-    .wrapper-news-2 .news-2 .post-block .content .title {
+    .wrapper-news-2 .news-2 .list-post-block .content .title {
       font-size: 24px;
       font-weight: 900; }
-      .wrapper-news-2 .news-2 .post-block .content .title a {
+      .wrapper-news-2 .news-2 .list-post-block .content .title a {
         color: #fff; }
-        .wrapper-news-2 .news-2 .post-block .content .title a:hover {
+        .wrapper-news-2 .news-2 .list-post-block .content .title a:hover {
           color: #555; }
-    .wrapper-news-2 .news-2 .post-block .content .des {
+    .wrapper-news-2 .news-2 .list-post-block .content .des {
       color: #fff;
       font-size: 16px;
       width: 66.666%;
       height: 42px;
       overflow: hidden;
       margin-top: 25px; }
-    .wrapper-news-2 .news-2 .post-block .content .author {
+    .wrapper-news-2 .news-2 .list-post-block .content .author {
       font-size: 14px;
       color: #808080;
       font-style: italic;
       position: relative;
       padding-left: 40px;
       margin: 0; }
-      .wrapper-news-2 .news-2 .post-block .content .author span {
+      .wrapper-news-2 .news-2 .list-post-block .content .author span {
         color: #1e35ab;
         font-weight: 700; }
-      .wrapper-news-2 .news-2 .post-block .content .author::before {
+      .wrapper-news-2 .news-2 .list-post-block .content .author::before {
         content: "";
         width: 30px;
         height: 30px;
