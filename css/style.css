@@ -809,7 +809,8 @@ main {
       text-align: center;
       font-size: 25px; }
     main .hm-col-9 .des p {
-      font-size: 21px; }
+      font-size: 21px;
+      font-weight: 100; }
     main .hm-col-9 .des .des-img {
       width: 66.6666%;
       margin: 10px auto; }
