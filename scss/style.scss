@@ -31,7 +31,7 @@ video{
 }
 body {
     font-size: 14px !important;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.285;
     color: #fff;
     font-weight: 400;
@@ -533,7 +533,7 @@ nav{
 
 
 /* ===================sidebar======================= */
-aside{
+#sidebar{
     .widgets{
         .widget-title{
             padding: 15px 10px;
@@ -853,92 +853,62 @@ footer{
 main{
     margin-top: 50px;
     margin-bottom: 50px;
-    #sidebar{
-        padding: 15px;
-        border: 7px solid #004d9a;        
-        .radio-group{
-            padding:  0 20px;
-            h3{
-                font-size: 15px;
-                font-weight: 900;
-                text-transform: uppercase;
+    #sidebar02{
+        padding: 10px;
+        // border: 7px solid #004d9a;        
+        .widgets{
+            +.widgets{
+                margin-top: 40px;
             }
-            .filter-type{
-                padding: 0 25px;
-                input, p{
-                    display: inline-block;
+            &.style-2{
+                box-shadow: 1px 1px 10px rgba(255, 255, 255, .65);
+                .widget-title{
+                    h3{
+                        color: #fff;
+                        font-size: 20px !important;
+                        background-color: #555;
+                        text-transform: uppercase;
+                        padding: 10px;
+                    }
                 }
-                input{
-                    width: 12px;
-                    height: 12px;
-                    background-color: transparent;
-                }
-                p{
-                    width: calc(100% - 20px);
-                    padding-left: 5px;
-                }
-            }
-        }
-        .hardware-group{
-            padding:  0 20px;
-
-            h3{
-                font-size: 15px;
-                font-weight: 900;
-                text-transform: uppercase;
-                margin: 0;
-                padding:  10px 0;
-            }
-            .filter-hardware{
-                p{
-                    text-align: center;
-                    text-transform: uppercase;
-                    margin: 0;
-                    padding: 5px 0;
-                }
-                input{
-                    width: 100%;
-                }
-            }
-        }
-        .product-year{
-            padding:  0 20px;
-            margin-top: 20px;
-            h3{
-                font-size: 15px;
-                font-weight: 900;
-                text-transform: uppercase;
-                margin: 0;
-                padding:  10px 0;
-            }
-            select{
-                width: 100%;
-            }
-        }
-        .rating{
-            padding:  0 20px;
-            margin-top: 20px;
-            h3{
-                font-size: 15px;
-                font-weight: 900;
-                text-transform: uppercase;
-            }
-            .star{
-                width: 30px;
-                height: 27px;
-                cursor: pointer;
-                display: inline-block;
-                background-image: url('../images/un-star.png');
-                transition: all .5s ease;
-                &.main-active{
-                    background-image: url('../images/star.png') !important;
-                }
-                &.sub-active{
-                    background-image: url('../images/star.png') !important;
+                .widget-content{
+                    padding: 10px;
+                    + .widget-content{
+                        border-top: 2px dashed #fff;
+                    }
+                    .img{
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            top: 15px;
+                            left: 15px;;
+                            right: 15px;
+                            bottom: 15px;
+                            background-color: rgba(0,0,0,0);
+                            transition: all .3s ease;
+                        }
+                        &:hover{
+                            &::after{
+                                top: 0;
+                                left: 0;;
+                                right: 0;
+                                bottom: 0;
+                                background-color: rgba(0,0,0,0.5);
+                            }
+                        }
+                    }
+                    h3{
+                        text-align: center;
+                        a{
+                            color: #fff;
+                            font-size: 18px;
+                            text-transform: uppercase;
+                            &:hover{color: #777};
+                        }
+                    }
                 }
             }
         }
-        
     }
     .hm-col-9{
         .product-detail{

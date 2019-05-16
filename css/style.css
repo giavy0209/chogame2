@@ -32,7 +32,7 @@ video {
 
 body {
   font-size: 14px !important;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.285;
   color: #fff;
   font-weight: 400;
@@ -452,14 +452,14 @@ nav {
     text-align: right; }
 
 /* ===================sidebar======================= */
-aside .widgets .widget-title {
+#sidebar .widgets .widget-title {
   padding: 15px 10px;
   text-transform: uppercase;
   text-align: center;
   font-size: 30px;
   font-weight: bolder;
   color: #825f95; }
-aside .widgets .list-brand .brand {
+#sidebar .widgets .list-brand .brand {
   margin-top: 40px; }
 
 /* =================== wrapper news 2======================= */
@@ -690,70 +690,45 @@ footer .hm-container-fluid {
 main {
   margin-top: 50px;
   margin-bottom: 50px; }
-  main #sidebar {
-    padding: 15px;
-    border: 7px solid #004d9a; }
-    main #sidebar .radio-group {
-      padding: 0 20px; }
-      main #sidebar .radio-group h3 {
-        font-size: 15px;
-        font-weight: 900;
-        text-transform: uppercase; }
-      main #sidebar .radio-group .filter-type {
-        padding: 0 25px; }
-        main #sidebar .radio-group .filter-type input, main #sidebar .radio-group .filter-type p {
-          display: inline-block; }
-        main #sidebar .radio-group .filter-type input {
-          width: 12px;
-          height: 12px;
-          background-color: transparent; }
-        main #sidebar .radio-group .filter-type p {
-          width: calc(100% - 20px);
-          padding-left: 5px; }
-    main #sidebar .hardware-group {
-      padding: 0 20px; }
-      main #sidebar .hardware-group h3 {
-        font-size: 15px;
-        font-weight: 900;
+  main #sidebar02 {
+    padding: 10px; }
+    main #sidebar02 .widgets + .widgets {
+      margin-top: 40px; }
+    main #sidebar02 .widgets.style-2 {
+      box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.65); }
+      main #sidebar02 .widgets.style-2 .widget-title h3 {
+        color: #fff;
+        font-size: 20px !important;
+        background-color: #555;
         text-transform: uppercase;
-        margin: 0;
-        padding: 10px 0; }
-      main #sidebar .hardware-group .filter-hardware p {
-        text-align: center;
-        text-transform: uppercase;
-        margin: 0;
-        padding: 5px 0; }
-      main #sidebar .hardware-group .filter-hardware input {
-        width: 100%; }
-    main #sidebar .product-year {
-      padding: 0 20px;
-      margin-top: 20px; }
-      main #sidebar .product-year h3 {
-        font-size: 15px;
-        font-weight: 900;
-        text-transform: uppercase;
-        margin: 0;
-        padding: 10px 0; }
-      main #sidebar .product-year select {
-        width: 100%; }
-    main #sidebar .rating {
-      padding: 0 20px;
-      margin-top: 20px; }
-      main #sidebar .rating h3 {
-        font-size: 15px;
-        font-weight: 900;
-        text-transform: uppercase; }
-      main #sidebar .rating .star {
-        width: 30px;
-        height: 27px;
-        cursor: pointer;
-        display: inline-block;
-        background-image: url("../images/un-star.png");
-        transition: all .5s ease; }
-        main #sidebar .rating .star.main-active {
-          background-image: url("../images/star.png") !important; }
-        main #sidebar .rating .star.sub-active {
-          background-image: url("../images/star.png") !important; }
+        padding: 10px; }
+      main #sidebar02 .widgets.style-2 .widget-content {
+        padding: 10px; }
+        main #sidebar02 .widgets.style-2 .widget-content + .widget-content {
+          border-top: 2px dashed #fff; }
+        main #sidebar02 .widgets.style-2 .widget-content .img::after {
+          content: '';
+          position: absolute;
+          top: 15px;
+          left: 15px;
+          right: 15px;
+          bottom: 15px;
+          background-color: rgba(0, 0, 0, 0);
+          transition: all .3s ease; }
+        main #sidebar02 .widgets.style-2 .widget-content .img:hover::after {
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(0, 0, 0, 0.5); }
+        main #sidebar02 .widgets.style-2 .widget-content h3 {
+          text-align: center; }
+          main #sidebar02 .widgets.style-2 .widget-content h3 a {
+            color: #fff;
+            font-size: 18px;
+            text-transform: uppercase; }
+            main #sidebar02 .widgets.style-2 .widget-content h3 a:hover {
+              color: #777; }
   main .hm-col-9 .product-detail {
     background-color: #00070d;
     border-radius: 10px;
