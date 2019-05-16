@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <!-- facebook -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=682829465411569&autoLogAppEvents=1"></script>
+
+    <header>
+        <div class="hm-container-fluid">
+            <div class="container">
+                <div class="top-header hm-row va-m">
+                    <div class="hm-col-3 va-m hm-push-3">
+                        <div class="logo">
+                            <a href="/"><img src="images/logo.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="hm-col-4">
+                        <form class="search-header" action="">
+                            <div class="input-group">
+                                <input type="text" placeholder="Nhập nội dung tìm kiếm ...">
+                                <i class="icons fas fa-search"></i>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="hm-col-2">
+                        <div class="contact clear">
+                            <a href="#"><img src="images/fb.png" alt=""></a>
+                            <a href="#"><img src="images/google.png" alt=""></a>
+                            <a href="#"><img src="images/zalo.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav id="menu" onclick="showMenu()">
+        <div class="hm-conntainer-fluid">
+            <div class="container">
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a>
+                        <ul>
+                            <li><a href="#">Sub menu</a></li>
+                            <li><a href="#">Sub menu</a></li>
+                            <li><a href="#">Sub menu</a></li>
+                            <li><a href="#">Sub menu</a></li>
+                            <li><a href="#">Sub menu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="#">Thư Viện</a></li>
+                    <li><a href="#">Liên Hệ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="hm-row">
+                <div class="hm-col-3">
+                    <aside id="sidebar" class="filter">
+                        <div class="radio-group">
+                            <h3>thể loại</h3>
+                            <div class="filter-type">
+                                <input type="radio" name="type" id="">
+                                <p>Thể loại</p>
+                                <input type="radio" name="type" id="">
+                                <p>Thể loại</p>
+                                <input type="radio" name="type" id="">
+                                <p>Thể loại</p>
+                                <input type="radio" name="type" id="">
+                                <p>Thể loại</p>
+                                <input type="radio" name="type" id="">
+                                <p>Thể loại</p>
+                                <input type="radio" name="type" id="">
+                                <p>Thể loại</p>
+                                <input type="radio" name="type" id="">
+                                <p>Thể loại</p>
+                                <input type="radio" name="type" id="">
+                                <p>Thể loại</p>
+                                <input type="radio" name="type" id="">
+                                <p>Thể loại</p>
+                            </div>
+                        </div>
+                        <div class="hardware-group">
+                            <h3>ram yêu cầu</h3>
+                            <div class="filter-hardware">
+                                <p>lớn hơn</p><input type="number" placeholder="(GB)">
+                                <p>nhỏ hơn</p><input type="number" placeholder="(GB)">
+                            </div>
+                            <h3>dung lượng download</h3>
+                            <div class="filter-hardware">
+                                <p>lớn hơn</p><input type="number" name="" id="" placeholder="(GB)">
+                                <p>nhỏ hơn</p><input type="number" name="" id="" placeholder="(GB)">
+                            </div>
+                        </div>
+                        <div class="product-year">
+                            <h3>năm sản xuất</h3>
+                            <select name="product-year" id="">
+                            </select>
+                        </div>
+                        <div class="rating">
+                            <h3>đánh giá</h3>
+                            <div onclick="addMainStar1()" onmouseover="addSubStar1()" onmouseout="removeSubStar()"
+                                class="star"></div>
+                            <div onclick="addMainStar2()" onmouseover="addSubStar2()" onmouseout="removeSubStar()"
+                                class="star"></div>
+                            <div onclick="addMainStar3()" onmouseover="addSubStar3()" onmouseout="removeSubStar()"
+                                class="star"></div>
+                            <div onclick="addMainStar4()" onmouseover="addSubStar4()" onmouseout="removeSubStar()"
+                                class="star"></div>
+                            <div onclick="addMainStar5()" onmouseover="addSubStar5()" onmouseout="removeSubStar()"
+                                class="star"></div>
+                        </div>
+                    </aside>
+                </div>
+                <div class="hm-col-9">
+                    <div class="product-detail">
+                        <div class="top-product-detail">
+                            <div class="product-name">
+                                <h1>Arena OF Valor ( CD key)</h1>
+                            </div>
+                            <div class="hm-row">
+                                <div class="hm-col-8">
+                                    <div class="slide-product">
+                                        <div class="product-img-1 product-img active img img-2-1"><img id="product-img-0" src="images/product-detail-img.png" alt=""></div>
+                                        <div class="product-img-2 product-img img img-2-1"><img id="product-img-0" src="images/product-img.png" alt=""></div>
+                                        <div class="product-img-3 product-img img img-2-1"><img id="product-img-0" src="images/news-2.png" alt=""></div>
+                                        <div class="another-img">
+                                            <div onclick="changeImg1()" id="product-img-1" ><a class="img-1 img img-2-1"><img src="images/product-detail-img.png" alt=""></a></div>
+                                            <div onclick="changeImg2()" id="product-img-2" ><a class="img-2 img img-2-1"><img src="images/product-img.png" alt=""></a></div>
+                                            <div onclick="changeImg3()" id="product-img-3" ><a class="img-3 img img-2-1"><img src="images/news-2.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hm-col-4">
+                                    <div id="price">
+                                        <p>Mã sản phẩm: AOV</p>
+                                        <p>Tình trạng: Còn hàng</p>
+                                        <p id="old-price">Gía cũ</p>
+                                        <p class="old-price">1.262.000 VNĐ </p>
+                                        <p class="new-price">69.000 VNĐ</p>
+                                        <a href="contact.html">liên hệ</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="des">
+                        <h3>Mô tả</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quod adipisci facilis voluptatibus quaerat vero reprehenderit libero. Commodi facere laudantium nobis! Dignissimos voluptate, ullam dolore sint voluptates nostrum modi cumqueLorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quod adipisci facilis voluptatibus quaerat vero reprehenderit libero. Commodi facere laudantium nobis! Dignissimos voluptate, ullam dolore sint voluptates nostrum modi cumqueLorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quod adipisci facilis voluptatibus quaerat vero reprehenderit libero. Commodi facere laudantium nobis! Dignissimos voluptate, ullam dolore sint voluptates nostrum modi cumqueLorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quod adipisci facilis voluptatibus quaerat vero reprehenderit libero. Commodi facere laudantium nobis! Dignissimos voluptate, ullam dolore sint voluptates nostrum modi cumqueLorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, quod adipisci facilis voluptatibus quaerat vero reprehenderit libero. Commodi facere laudantium nobis! Dignissimos voluptate, ullam dolore sint voluptates nostrum modi cumque?</p>
+                        <div class="des-img">
+                            <img src="images/product-detail-img.png" alt="">
+                            <p class="img-des">Lorem Ipsum is simply dummy text ofnlyync </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="hm-container-fluid">
+            <div class="container">
+                <div class="hm-row">
+                    <div class="hm-col-2 hm-push-1">
+                        <a href="index.html" class="logo"> <img src="images/logo.png" alt=""></a>
+                        <div class="slogan">
+                            <p>slogan</p>
+                        </div>
+                        <div class="contact">
+                            <ul class="clear">
+                                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="hm-col-4">
+                        <div class="widgets widgets-info clear">
+                            <div class="widgets-title">
+                                <h3>Thông tin</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Giới thiệu về NPS</a></li>
+                                <li><a href="#">Chính sách bảo mật</a></li>
+                                <li><a href="#">Liên Hệ Quảng cáo</a></li>
+                                <li><a href="#">Chợ game RSS</a></li>
+                            </ul>
+                        </div>
+                        <div class="widgets widgets-forum">
+                            <div class="widgets-title">
+                                <h3>Diễn đàn</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Nội quy diễn đàn</a></li>
+                                <li><a href="#">Thỏa thuận sử dụng dịch vụ</a></li>
+                                <li><a href="#">Góp ý</a></li>
+                                <li><a href="#">Hỗ trợ, hướng dẫn</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="hm-col-5">
+                        <div class="contact">
+                            <h3>Contact us</h3>
+                            <div class="left">Phone</div>
+                            <p class="right">0969.969.696</p>
+                            <div class="left">Phone</div>
+                            <p class="right">0969.969.696</p>
+                            <div class="left">Phone</div>
+                            <p class="right">0969.969.696</p>
+                            <div class="left">Phone</div>
+                            <p class="right">0969.969.696</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="last-footer">Copyright by <a href="nps.vn">NPS</a></div>
+        </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/product-detail.js"></script>
+
+</html>
