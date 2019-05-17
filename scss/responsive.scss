@@ -66,6 +66,21 @@
             width: 100%; 
             .product-detail {
                 .top-product-detail {
+                    .hm-col-8{
+                        width:100%;
+                    }
+                    .hm-col-4{
+                        width: 100%;
+                        text-align: center;
+                        #price{
+                            p{
+                                font-size: 16px;
+                            }
+                            #old-price{
+                                margin: 0;
+                            }
+                        }
+                    }
                     .product-name {
                         h1{
                             font-size: 20px;
@@ -73,13 +88,7 @@
                     }
                 }
             }
-            .hm-col-8{
-                width:100%;
-            }
-            .hm-col-4{
-                width: 100%;
-                text-align: center;
-            }
+            
         }
     }
     .wrapper-content{
