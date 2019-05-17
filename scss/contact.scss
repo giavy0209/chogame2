@@ -1,0 +1,117 @@
+main{
+    .container{
+        .hm-row{
+            position: relative;
+            .hm-col-12{
+                background-color: #000;
+                position: relative;
+                box-shadow: 1px 1px 15px #000;
+                .hm-row{
+                    .hm-col-8{
+                        position: relative;
+                        .contact-logo{
+                            display: inline-block;
+                            width: 400px;
+                            background-image: radial-gradient(#090d37 5%,#000);
+                            margin-top: 35px;
+                            margin-left: 40%
+                        }
+                        .contacts{
+                            margin-left: 28%;
+                            margin-top: 50px;
+                            .contact{
+                                font-size: 0;
+                                
+                                > * {
+                                    display: inline-block;
+                                }
+                                p{
+                                    &:first-child{
+                                        width: 14.2%;
+                                        font-size: 22px;
+                                        color: #727cff;
+                                        font-weight: 900;
+                                    }
+                                    &:last-child{
+                                        width: calc( 100% - 14.2%);
+                                        font-size: 18px;
+                                        color: #fff;
+                                        padding-left: 20px;
+                                    }
+                                }
+                            }
+                        }
+                        .social{
+                            text-align: right;
+                            padding: 10px 0;
+                            >*{
+                                background-color: #3745f8;
+                                color: #000;
+                                border-radius: 50%;
+                                padding: 5px;
+                                i{
+                                    font-size: 25px
+                                }
+                            }
+                        }
+                    }
+                    .hm-col-4{
+                        .contact-info{
+                            background-color: #fff;
+                            padding: 50px;
+                            position: absolute;
+                            top: 20px;
+                            right: -70px;
+                            left: 75%;
+                            bottom: 20px;
+                            h3{
+                                font-size: 60px;
+                                font-weight: 900;
+                                color: #024588;
+                            }
+                            form{
+                                margin-top: 55px;
+                                p{
+                                    font-size: 22px;
+                                    color: #024588;
+                                    margin: 0;
+                                    ~ p{
+                                        margin-top: 50px;
+                                    }
+                                }
+                                input{
+                                    border: none;
+                                    border-bottom: 1px solid #024588;
+                                    width: 75%;
+                                }
+                                textarea{
+                                    border: none;
+                                    border-bottom: 1px solid #024588;
+                                    width: 95%;
+                                    height: 120px;
+                                }
+                            }
+                            .send-btn{
+                                position: absolute;
+                                font-size: 28px;
+                                font-weight: 900;
+                                bottom: 0;
+                                left: 0;
+                                right: 0;
+                                width: 100%;
+                                border: none;
+                                background-color: #024588;
+                                color: #fff;
+                                transition: all .3s ease;
+                                padding: 15px 0;
+                                &:hover{
+                                    background-color: #090d37;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
