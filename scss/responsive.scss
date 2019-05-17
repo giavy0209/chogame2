@@ -58,6 +58,30 @@
             margin-top: 30px;
         }
     }
+    main{
+        #sidebar02{
+            display: none;
+        }
+        .hm-col-3 + .hm-col-9{
+            width: 100%; 
+            .product-detail {
+                .top-product-detail {
+                    .product-name {
+                        h1{
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+            .hm-col-8{
+                width:100%;
+            }
+            .hm-col-4{
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
     .wrapper-content{
         #sidebar{
             display: none;
@@ -117,7 +141,7 @@
                 position: absolute;
                 top: 50%;
                 left: 50%;
-                transform: translate(50%, -50%);
+                transform: translate(-50%, -50%);
                 box-shadow: 0 5px 0 #fff;
                 background-color: #fff;
                 
