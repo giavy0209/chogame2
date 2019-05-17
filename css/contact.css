@@ -53,35 +53,51 @@ main .container .hm-row {
         color: #024588; }
       main .container .hm-row .hm-col-12 .hm-row .hm-col-4 .contact-info form {
         margin-top: 40px; }
-        main .container .hm-row .hm-col-12 .hm-row .hm-col-4 .contact-info form p {
-          font-size: 22px;
-          color: #024588;
-          margin: 0; }
-          main .container .hm-row .hm-col-12 .hm-row .hm-col-4 .contact-info form p ~ p {
-            margin-top: 30px; }
-        main .container .hm-row .hm-col-12 .hm-row .hm-col-4 .contact-info form input {
-          border: none;
-          border-bottom: 1px solid #024588;
-          width: 50%;
-          padding-top: 20px;
-          font-size: 14px;
-          transition: all .3s ease; }
-          main .container .hm-row .hm-col-12 .hm-row .hm-col-4 .contact-info form input:focus {
+        main .container .hm-row .hm-col-12 .hm-row .hm-col-4 .contact-info form .group-input {
+          display: flex;
+          flex-direction: column-reverse;
+          left: 10%;
+          right: 10%;
+          position: absolute;
+          height: 36px; }
+          main .container .hm-row .hm-col-12 .hm-row .hm-col-4 .contact-info form .group-input:nth-of-type(1) {
+            top: 30%; }
+          main .container .hm-row .hm-col-12 .hm-row .hm-col-4 .contact-info form .group-input:nth-of-type(2) {
+            top: 45%; }
+          main .container .hm-row .hm-col-12 .hm-row .hm-col-4 .contact-info form .group-input:nth-of-type(3) {
+            top: 60%; }
+          main .container .hm-row .hm-col-12 .hm-row .hm-col-4 .contact-info form .group-input p {
             font-size: 22px;
-            width: 75%;
-            padding-top: 9px; }
-        main .container .hm-row .hm-col-12 .hm-row .hm-col-4 .contact-info form textarea {
-          border: none;
-          border-bottom: 1px solid #024588;
-          width: 75%;
-          height: 120px;
-          transition: all .3s ease;
-          padding-top: 20px;
-          font-size: 14px; }
-          main .container .hm-row .hm-col-12 .hm-row .hm-col-4 .contact-info form textarea:focus {
-            font-size: 22px;
-            width: 95%;
-            padding-top: 11px; }
+            color: #024588;
+            margin: 0;
+            transition: all .4s ease;
+            position: absolute;
+            top: 0; }
+          main .container .hm-row .hm-col-12 .hm-row .hm-col-4 .contact-info form .group-input input {
+            border: none;
+            border-bottom: 1px solid #024588;
+            width: 100%;
+            font-size: 14px;
+            transition: all .4s ease;
+            position: absolute;
+            bottom: 3px; }
+            main .container .hm-row .hm-col-12 .hm-row .hm-col-4 .contact-info form .group-input input:focus {
+              padding-bottom: 5px; }
+              main .container .hm-row .hm-col-12 .hm-row .hm-col-4 .contact-info form .group-input input:focus ~ p {
+                font-size: 14px;
+                top: -12px; }
+          main .container .hm-row .hm-col-12 .hm-row .hm-col-4 .contact-info form .group-input textarea {
+            border: none;
+            border-bottom: 1px solid #024588;
+            width: 100%;
+            height: 120px;
+            transition: all .3s ease;
+            font-size: 18px; }
+            main .container .hm-row .hm-col-12 .hm-row .hm-col-4 .contact-info form .group-input textarea:focus {
+              font-size: 18px; }
+              main .container .hm-row .hm-col-12 .hm-row .hm-col-4 .contact-info form .group-input textarea:focus ~ p {
+                font-size: 14px;
+                top: -18px; }
       main .container .hm-row .hm-col-12 .hm-row .hm-col-4 .contact-info .send-btn {
         position: absolute;
         font-size: 28px;

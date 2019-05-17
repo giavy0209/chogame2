@@ -71,40 +71,62 @@ main{
                             }
                             form{
                                 margin-top: 40px;
-                                p{
-                                    font-size: 22px;
-                                    color: #024588;
-                                    margin: 0;
-                                    ~ p{
-                                        margin-top: 30px;
-                                    }
-                                }
-                                input{
-                                    border: none;
-                                    border-bottom: 1px solid #024588;
-                                    width: 50%;
-                                    padding-top: 20px;
-                                    font-size: 14px;
-                                    transition: all .3s ease;
-                                    &:focus{ 
-                                        font-size: 22px;
-                                        width: 75%;
-                                        padding-top: 9px;
-                                    }
-                                }
-                                textarea{
-                                    border: none;
-                                    border-bottom: 1px solid #024588;
-                                    width: 75%;
-                                    height: 120px;
-                                    transition: all .3s ease;
-                                    padding-top: 20px;
-                                    font-size: 14px;
-                                    &:focus{ 
-                                        font-size: 22px;
-                                        width: 95%;
-                                        padding-top: 11px;
+                                // position: absolute;
 
+                                .group-input{
+                                    display: flex;
+                                    flex-direction: column-reverse;
+                                    left: 10%;
+                                    right: 10%;
+                                    position: absolute;
+                                    height: 36px;;
+                                    &:nth-of-type(1){
+                                        top: 30%
+                                    }
+                                    &:nth-of-type(2){
+                                        top: 45%
+                                    }
+                                    &:nth-of-type(3){
+                                        top: 60%
+                                    }
+                                    p{
+                                        font-size: 22px;
+                                        color: #024588;
+                                        margin: 0;
+                                        transition: all .4s ease;
+                                        position: absolute;
+                                        top: 0;
+                                    }
+                                    input{
+                                        border: none;
+                                        border-bottom: 1px solid #024588;
+                                        width: 100%;
+                                        font-size: 14px;
+                                        transition: all .4s ease;
+                                        position: absolute;
+                                        bottom: 3px;
+                                        &:focus{
+                                            padding-bottom: 5px;
+                                            ~ p{
+                                                font-size: 14px;
+                                                top: -12px
+                                            }
+                                        }
+                                    }
+                                    textarea{
+                                        border: none;
+                                        border-bottom: 1px solid #024588;
+                                        width: 100%;
+                                        height: 120px;
+                                        transition: all .3s ease;
+                                        font-size: 18px;
+                                        &:focus{
+                                            font-size: 18px;
+                                            ~ p{
+                                                font-size: 14px;
+                                                top: -18px
+                                            }
+                                        }
                                     }
                                 }
                             }
