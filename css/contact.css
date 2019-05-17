@@ -52,22 +52,36 @@ main .container .hm-row {
         font-weight: 900;
         color: #024588; }
       main .container .hm-row .hm-col-12 .hm-row .hm-col-4 .contact-info form {
-        margin-top: 55px; }
+        margin-top: 40px; }
         main .container .hm-row .hm-col-12 .hm-row .hm-col-4 .contact-info form p {
           font-size: 22px;
           color: #024588;
           margin: 0; }
           main .container .hm-row .hm-col-12 .hm-row .hm-col-4 .contact-info form p ~ p {
-            margin-top: 50px; }
+            margin-top: 30px; }
         main .container .hm-row .hm-col-12 .hm-row .hm-col-4 .contact-info form input {
           border: none;
           border-bottom: 1px solid #024588;
-          width: 75%; }
+          width: 50%;
+          padding-top: 20px;
+          font-size: 14px;
+          transition: all .3s ease; }
+          main .container .hm-row .hm-col-12 .hm-row .hm-col-4 .contact-info form input:focus {
+            font-size: 22px;
+            width: 75%;
+            padding-top: 10px; }
         main .container .hm-row .hm-col-12 .hm-row .hm-col-4 .contact-info form textarea {
           border: none;
           border-bottom: 1px solid #024588;
-          width: 95%;
-          height: 120px; }
+          width: 75%;
+          height: 120px;
+          transition: all .3s ease;
+          padding-top: 20px;
+          font-size: 14px; }
+          main .container .hm-row .hm-col-12 .hm-row .hm-col-4 .contact-info form textarea:focus {
+            font-size: 22px;
+            width: 95%;
+            padding-top: 11px; }
       main .container .hm-row .hm-col-12 .hm-row .hm-col-4 .contact-info .send-btn {
         position: absolute;
         font-size: 28px;
