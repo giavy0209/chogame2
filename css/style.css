@@ -479,6 +479,8 @@ nav {
 .wrapper-news-2 .news-2 .list-post-block {
   font-size: 0;
   margin-top: 25px; }
+  .wrapper-news-2 .news-2 .list-post-block .post-block + .post-block {
+    margin-top: 20px; }
   .wrapper-news-2 .news-2 .list-post-block * {
     vertical-align: top; }
   .wrapper-news-2 .news-2 .list-post-block .news-2-img {
